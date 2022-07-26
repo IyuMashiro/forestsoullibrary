@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/head.css" />
+<link rel="stylesheet" href="../css/user-main.css" />
+<link rel="stylesheet" href="../css/personal-home-noaddress.css" />
+
+
+
+<body>
+<nav class="navbar navbar-default" id="head">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">森灵</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" id="head-input" class="form-control" placeholder="书海寻径">
+        </div>
+        <button type="button" id="head-sub" class="btn btn-default">搜索</button>
+      </form>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="customer-car.html">购物车</a></li>
+        <li><a href="customer-indent-info.html">我的订单</a></li>
+        <li><a href="customer-book.html">我的图书</a></li>
+        <li class="dropdown">
+          <a href="#" id="customerName" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="customer-Info.html">个人主页</a></li>
+            <li><a href="/customer/logout">注销</a></li>
+          </ul>
+        </li>
+        <img id="head-img" src="/img/default_icon.png">
+      </ul>
+    </div>
+  </div>
+</nav>
+<hr id="line" />
+<div id="user-main">
+  <div>
+    <img src="../img/headImg.png">
+  </div>
+  <!--
+
+  修改资料，密码
+
+  -->
+  <div>
+    <form>
+        <div id="user-icon">
+          <div id="icon-div">
+            <img id="icon" src="/img/default_icon.png">
+          </div>
+          <span id="user-name">admin</span>
+          <span>用户名：</span>
+          <p id="user-acct">3333</p>
+          <span id="user-id">id:</span>
+          <p id="user-id-val">1234567</p>
+          <table id="table-format">
+            <tr>
+              <th>拥有的纸质书</th>
+              <th>为书籍投资花费</th>
+            </tr>
+            <tr>
+              <th id="book">99</th>
+              <th id="price">￥99999</th>
+            </tr>
+          </table>
+          <button type="button" class="btn btn-default" id="modification-info">修改资料</button>
+          <button type="button" class="btn btn-default" id="change-pwd">修改密码</button>
+        </div>
+        <hr id="inline">
+      <div id="address">
+      </div>
+      <button type="button" class="btn btn-default pw-but" id="add-address">新增地址</button>
+      <div style="height: 30px"></div>
+    </form>
+  </div>
+</div>
+
+  <script src="../jQuery/jquery.min.js"></script>
+  <script src="../jQuery/bootstrap.min.js"></script>
+  <script src="../script/customer-info.js"></script>
+</body>
+
+</html>

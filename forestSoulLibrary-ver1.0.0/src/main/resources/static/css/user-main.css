@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+   }
+   #line{
+    border: none;
+    height: 15px;
+    background: rgba(255, 131, 82, 1);
+    margin: 0;
+   }
+   #user-main{
+    width: 1038px;
+    margin: 0 auto;
+    background: rgba(204, 237, 235, 1);
+    border-radius: 0px 0px 28px 28px;
+   }
+  

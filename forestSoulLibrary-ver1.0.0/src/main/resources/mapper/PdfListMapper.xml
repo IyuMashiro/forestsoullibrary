@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.forestsoul.forestsoullibrary.mapper.PdfListMapper">
+    <!--自定义映射规则-->
+    <resultMap id="PdfListEntityMap" type="com.forestsoul.forestsoullibrary.entity.PdfList">
+        <id column="pdf_id" property="pdfId"/>
+        <result column="book_id" property="bookId"/>
+        <result column="customer_id" property="customerId"/>
+    </resultMap>
+
+    <insert id="addPdfList">
+        INSERT INTO pdf_list(book_id,customer_id) VALUES (#{bookId},#{customerId})
+    </insert>
+
+    <select id="findPdfById" resultMap="PdfListEntityMap">
+        SELECT * FROM pdf_list WHERE book_id = #{bookId} AND customer_id = #{customerId}
+    </select>
+
+    <select id="getAllPdfById" resultMap="PdfListEntityMap">
+        SELECT * FROM pdf_list WHERE customer_id = #{customerId}
+    </select>
+
+</mapper>

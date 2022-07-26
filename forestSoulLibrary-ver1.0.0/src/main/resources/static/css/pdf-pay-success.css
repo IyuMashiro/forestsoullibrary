@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box{
+    position: relative;
+}
+#box> #center, #thanking,#btn{
+    width: 1300px;
+    margin: 30px auto;
+    text-align: center;
+}
+#box> #center{
+    line-height: 52px;
+    font-size: 24px;
+    font-weight: 700;
+}
+#box> #center .col-sm-5{
+    height: 52px;
+    background: rgba(166, 166, 166, 1);
+    color: white;
+}
+#thanking{
+    height: 267px;
+    background: rgba(202, 235, 233, 1);
+    font-size: 20px;
+    font-weight: 700;
+}
+#thanking label{
+    height: 51px;
+    display: inline-block;
+    line-height: 51px;
+}
+#Order_number{
+    line-height: 216px;
+    height: 216px;
+    background: rgba(180, 212, 210, 1);
+}
+#btn .col-sm-2>button{
+    background: rgba(165, 214, 63, 1);
+}
+#btn .col-sm-3>button{
+    background: rgba(223, 116, 74, 1);
+    margin-right: -73px;
+}
+#btn button{
+    width: 229px;
+    height: 54px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+#buttom{
+    height: 80px;
+    background: rgba(254, 220, 210, 1);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#success{
+    background-color: rgb(223, 116, 74) !important;
+}
+#read{
+    background: rgba(165, 214, 63, 1);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    width: 222px;
+    height: 54px;
+    display: block;
+    text-align: center;
+    line-height: 54px;
+}

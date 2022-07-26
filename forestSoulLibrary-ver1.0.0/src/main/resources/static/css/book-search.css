@@ -1,0 +1,179 @@
+#container {
+    margin: 0 auto;
+    width: 100%;
+    min-width: 2000px;
+    border: none;
+    height: 50px;
+    background: rgba(254, 220, 210, 1);
+}
+ a{
+    text-decoration: none!important;
+}
+#container ul {
+    padding: 0;
+}
+
+#container>ul>li {
+    height: 50px;
+    position: relative;
+    padding: 0 57px;
+    list-style: none;
+    float: left;
+    line-height: 50px;
+}
+#container ul li a {
+    font-size: 16px;
+    color: rgba(223, 116, 74, 1);
+}
+
+
+#second-book,#third-book,#fourthly-book{
+    white-space: nowrap;
+    margin: 0;
+    display: none;
+    background-color: rgba(242, 185, 167, 1);
+    border: none;
+    width: 100%;
+}
+#second-book>ul,#third-book>ul,#fourthly-book>ul {
+    margin: 0;
+    padding: 0;
+}
+
+#second-book>ul>li,#third-book>ul>li,#fourthly-book>ul>li {
+    margin: 0 67px;
+    list-style: none;
+    display: inline;
+    line-height: 40px;
+}
+
+#second-book>ul>li a,#third-book>ul>li a,#fourthly-book>ul>li a{
+    position: relative;
+    color: black;
+}
+
+.second-book-wunxue a {
+    font-size: 17px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+
+#goods {
+    margin: 0;
+    position: relative;
+    border: none;
+    background-color: white;
+}
+
+#goods span:first-child {
+    left: 20px;
+    position: relative;
+    line-height: 50px;
+}
+
+#goods span:last-child {
+    position: relative;
+    left: 40px;
+    width: 170px;
+    height: 40px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 700
+}
+
+#line {
+    margin: 0;
+    left: 0px;
+    height: 10px;
+    background: rgba(223, 116, 74, 1);
+}
+
+#message {
+    min-width: 1000px;
+    border: none;
+    padding: 0;
+    height: 53px;
+    background: rgba(191, 211, 210, 1);
+}
+
+#message li {
+    padding: 0 90px;
+    list-style: none;
+    float: left;
+    line-height: 50px;
+}
+
+#message li a {
+    font-size: 19px;
+    color: white;
+}
+
+#book-part {
+    background: rgba(191, 211, 210, 1);
+}
+
+.book-part-one {
+    width: 1660px;
+    height: 500px;
+    margin: 0 auto;
+    min-width: 1600px;
+    position: relative;
+}
+
+.book-part-two {
+    background-color: white;
+    float: left;
+    position: relative;
+    border: 1px white solid;
+    margin: 20px 25px;
+    display: block;
+    width: 281px;
+    height: 440px;
+}
+
+.book-part-two .img{
+    width: 228px;
+    height: 240px;
+    margin-left: 25px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.book-part-two p {
+    position: relative;
+    left: 10px;
+}
+
+#paging {
+    width: 350px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#foot {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: rgba(254, 220, 210, 1);
+}
+
+#foot p {
+    width: 400px;
+    line-height: 60px;
+    margin: 0 auto;
+}
+.price{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.name{
+    font-size: 18px;
+    font-weight: bold;
+}
+.author{
+    font-size: 16px;
+}
+#main-page{
+    margin-left: 45%;
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>森灵图书</title>
+   
+
+    <link rel="icon" href="../fonts/燕窝.svg">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/pagination.css">
+    <link rel="stylesheet" href="../css/admin-page.css">
+
+
+</head>
+<body>
+<nav class="navbar navbar-inverse" id="LMS-nav">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="libraryManageSystem.html">ForestSoulLibrary</a>
+        </div>
+
+        <div class="form-group">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="LMS-user-icon" src="../fonts/用户.svg"><span id="admin-acct"></span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a id="logout" href="admin-login.html">账号登出</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div id="LMS-main-side">
+	<ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active" id="side-1"><a href="#">权限管理</a></li>
+        <li role="presentation" id="side-2"><a href="book-page.html">图书管理</a></li>
+        <li role="presentation" id="side-3"><a href="recomment-page.html">今日推荐管理</a></li>
+        <li role="presentation" id="side-4"><a href="indent-page.html">图书订单管理</a></li>
+	</ul>
+</div>
+
+<div class="LMS-main-bar" id="bar1">
+    <ul class="nav nav-tabs" >
+        <li  role="presentation"  id="admin-bar"><a href="admin-ad-page.html">管理员账号管理</a></li>
+        <li  role="presentation" class="active" id="customer-bar"><a href="admin-cus-page.html">普通用户账号管理</a></li>
+    </ul>
+</div>
+
+<div id="LMS-main">
+    <div id="LMS-main-content">
+        <form class="navbar-form navbar-left search" id="customer-search">
+            <div class="form-group">
+                <input name="keyword" type="text" class="form-control" placeholder="请输入查询条件">
+            </div>
+            <button type="button" class="btn btn-default search-btn" id="customer-btn">查询</button>
+        </form>
+
+
+        <table class="table" id="LMS-tb">
+            <tr id="LMS-tb-head">
+                <th>id</th>
+                <th>账号名</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th>电子邮件</th>
+                <th>注册时间</th>
+                <th>操作</th>
+            </tr>
+        </table>
+        <!-- 分页插件-->
+        <nav aria-label="Page navigation" >
+            <div id="LMS-main-page">
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div id="LMS-foot">
+	
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../jQuery/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../jQuery/bootstrap.min.js" ></script>
+<script src="../jQuery/jquery.pagination.js"></script>
+<script src="../script/admin-cus-page.js"></script>
+</body>
+</html>

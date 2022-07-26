@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/head.css" />
+<link rel="stylesheet" href="../css/pagination.css">
+<link rel="stylesheet" href="../css/customer-indent-info.css">
+
+<body>
+    <nav class="navbar navbar-default" id="head">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">森灵</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" id="head-input" class="form-control" placeholder="书海寻径">
+                    </div>
+                    <button type="submit" id="head-sub" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right" id="login-bar">
+                    <li><a href="customer-car.html">购物车</a></li>
+                    <li><a href="customer-indent-info.html">我的订单</a></li>
+                    <li><a href="customer-book.html">我的图书</a></li>
+                    <li id="noLogin"><a href="web/login.html">登录 或 注册 </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--我的订单详情页-->
+    <ul id="order-main">
+        <li><a href="">我的订单</a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+    </ul>
+    <!--各个订单的状态-->
+    <div id="indent">
+
+    </div>
+
+    <!--分页-->
+    <!-- 分页插件-->
+    <nav aria-label="Page navigation" >
+        <div id="main-page">
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </nav>
+    <div id="foot">
+        <p>© 2022-现在 forestSoul 版权所有&nbsp&nbsp&nbsp&nbsp联系我们iyu.@163.com</p>
+    </div>
+    <script src="../jQuery/jquery.min.js"></script>
+    <script src="../jQuery/bootstrap.min.js"></script>
+    <script src="../jQuery/jquery.pagination.js"></script>
+    <script src="../script/customer-indent-info.js"></script>
+</body>

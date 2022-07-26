@@ -1,0 +1,42 @@
+#head{
+    margin: 0;
+}
+#head-input{
+    width: 400px;
+    border: 2px solid #43CF7C;
+    margin-left: 100px;
+}
+#head-sub{
+    width: 80px;
+    border: 1px #43CF7C solid;
+    background-color: #43CF7C;
+    color: white;
+    position: relative;
+    outline: none;
+}
+
+#head-sub:hover{
+    background-color: #3cbe70;
+}
+
+#head-sub:active{
+    outline: none;
+}
+
+#head-img{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    top: 8px;
+}
+
+#head-select{
+    position: relative;
+    right: 400px;
+}
+
+#head-select li{
+    font-size: 16px;
+    font-weight: bold;
+}

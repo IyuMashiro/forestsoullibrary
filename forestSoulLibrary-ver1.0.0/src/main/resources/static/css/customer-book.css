@@ -1,0 +1,119 @@
+#line {
+    border: none;
+    height: 15px;
+    background: rgba(255, 131, 82, 1);
+    margin: 0;
+}
+#foot {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 250px;
+    background: rgba(254, 220, 210, 1);
+}
+#goods {
+    margin: 0;
+    border: none;
+    background-color: white;
+}
+
+#goods span:first-child {
+    left: 20px;
+    position: relative;
+    line-height: 50px;
+}
+
+#goods span:last-child {
+    position: relative;
+    left: 40px;
+    width: 170px;
+    height: 40px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 700
+}
+#foot p {
+    width: 400px;
+    line-height: 100px;
+    margin: 0 auto;
+}
+#paging{
+    width: 200px;
+    margin: 0 auto;
+}
+#book-part {
+    height: 450px;
+    background: rgba(191, 211, 210, 1);
+}
+
+#my-book-one {
+    width: 900px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#my-book-two{
+    background-color: white;
+    border: 1px white solid;
+    margin: 20px 25px;
+    display: block;
+    width: 251px;
+    height: 360px;
+}
+#my-book-three{
+    position: relative;
+    left: 550px;
+    bottom: 510px;
+    background-color: white;
+    border: 1px white solid;
+    margin: 20px 25px;
+    display: block;
+    width: 251px;
+    height: 360px;
+}
+#my-book-one img {
+    width: 249px;
+    height: 240px;
+}
+.book-name{
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+    width: 200px;
+}
+.book-author{
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    left: 10px;
+    top: 20px;
+}
+
+#tubiao{
+    position: relative;
+    width: 100px !important;
+    height: 110px !important;
+    left: 380px;
+    bottom: 250px;
+}
+.read{
+    width: 150px;
+    height: 40px;
+    display: block;
+    background-color: #2da44e;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    position: relative;
+    left: 45px;
+    top: 10px;
+}
+#main-page{
+    position: relative;
+    top: 40px;
+    margin-left: 45%;
+}

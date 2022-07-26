@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.forestsoul.forestsoullibrary.mapper.BookListMapper">
+    <!--自定义映射规则-->
+    <resultMap id="BookListEntityMap" type="com.forestsoul.forestsoullibrary.entity.BookList">
+        <id column="book_list_id" property="bookListId"/>
+        <result column="indent_id" property="indentId"/>
+        <result column="book_id" property="bookId"/>
+        <result column="book_count" property="bookCount"/>
+    </resultMap>
+
+    <insert id="addBookList">
+        INSERT INTO book_list(indent_id,book_id,book_count) VALUES (#{indentId},#{bookId},#{bookCount})
+    </insert>
+
+    <select id="getBookListById" resultMap="BookListEntityMap">
+        SELECT * FROM book_list WHERE indent_id = #{indentId}
+    </select>
+</mapper>

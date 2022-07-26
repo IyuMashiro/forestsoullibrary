@@ -1,0 +1,86 @@
+.input input{
+    width: 370px;
+    position: relative;
+    left: 110px;
+}
+.input label{
+    position: relative;
+    top: 34px;
+    left: 50px;
+    font-size: 18px;
+}
+#phone{
+    position: relative;
+    top: -20px;
+}
+#phone label{
+    left: 16px;
+}
+.but{
+    width: 500px;
+    height: 40px;
+    margin-left: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+    outline: none;
+    
+}
+
+#updata{
+    background-color: #A5D63F;
+    color: white;
+    outline: none;
+}
+#updata:hover{
+    background-color: #91bb36;
+    color: white;
+}
+
+#updata:active{
+    background-color: #91bb36;
+    color: white;
+    outline: none;
+}
+
+#cal{
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.user-select{
+    width: 100px;
+    display: inline;
+}
+
+.select-name{
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    left: -30px;
+    
+}
+
+.select{
+    position: relative;
+    left: 79px;
+    top: 10px;
+}
+.OK{
+    display: none;
+}
+.error{
+    display: block;
+}
+
+.msg{
+    position: relative;
+    left: 500px;
+    top:-25px;
+    color: red;
+}
+.exMsg{
+    position: relative;
+    left: 420px;
+    top:-25px;
+    color: red;
+}

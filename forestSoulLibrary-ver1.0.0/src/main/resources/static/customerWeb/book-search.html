@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/pagination.css">
+<link rel="stylesheet" href="../css/head.css" />
+<link rel="stylesheet" href="../css/book-search.css" />
+
+
+<body>
+    <nav class="navbar navbar-default" id="head">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">森灵</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <form class="navbar-form navbar-left" id="bookSearch">
+                    <div class="form-group">
+                        <input type="text" id="head-input" name="keyword" class="form-control" placeholder="书海寻径">
+                    </div>
+                    <button type="button" id="head-sub" class="btn btn-default">搜索</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right" id="login-bar">
+                    <li><a href="customer-car.html">购物车</a></li>
+                    <li><a href="customer-indent-info.html">我的订单</a></li>
+                    <li><a href="customer-book.html">我的图书</a></li>
+                    <li id="noLogin"><a href="web/login.html">登录 或 注册 </a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+        </div>
+    </nav>
+    <nav id="container" class="navbar navbar-default">
+        <ul>
+            <li id="a-book"><a href="book-search.html">图书分类</a></li>
+            <li id="b-book"><a href="#">文学·小说</a></li>
+            <li id="c-book"><a href="#">社科·经管</a></li>
+            <li id="d-book"><a href="#">教材·教辅</a></li>
+        </ul>
+    </nav>
+  
+    <nav id="second-book">
+        <ul>
+            <li class="second-book-wunxue"><a href="#">文学:</a></li>
+            <li><a href="book-search.html?bookType=现代小说">现代文学</a></li>
+            <li><a href="book-search.html?bookType=民间文学">民间文学</a></li>
+            <li><a href="book-search.html?bookType=经典文学">经典文学</a></li>
+            <li><a href="book-search.html?bookType=外国文学">外国文学</a></li>
+        </ul>
+        <ul>
+            <li class="second-book-wunxue"><a href="">小说:</a></li>
+            <li><a href="book-search.html?bookType=科幻小说">科幻小说</a></li>
+            <li><a href="book-search.html?bookType=青春小说">青春小说</a></li>
+            <li><a href="book-search.html?bookType=武侠小说">武侠小说</a></li>
+            <li><a href="book-search.html?bookType=言情小说">言情小说</a></li>
+        </ul>
+    </nav>
+    <!--
+
+
+    -->
+    <nav id="third-book">
+        <ul>
+            <li class="second-book-wunxue"><a href="">社科:</a></li>
+            <li><a href="book-search.html?bookType=经济学类">经济学类</a></li>
+            <li><a href="book-search.html?bookType=新闻传播">新闻传播</a></li>
+            <li><a href="book-search.html?bookType=公共关系">公共关系</a></li>
+            <li><a href="book-search.html?bookType=社科理论">社科理论</a></li>
+        </ul>
+        <ul>
+            <li class="second-book-wunxue"><a href="">经管:</a></li>
+            <li><a href="book-search.html?bookType=金融管理">金融管理</a></li>
+            <li><a href="book-search.html?bookType=物流管理">物流管理</a></li>
+            <li><a href="book-search.html?bookType=质量管理">质量管理</a></li>
+            <li><a href="book-search.html?bookType=资源管理">资源管理</a></li>
+        </ul>
+    </nav>
+
+    <!--
+
+
+    -->
+    <nav id="fourthly-book">
+        <ul>
+            <li class="second-book-wunxue"><a href="">教材:</a></li>
+            <li><a href="book-search.html?bookType=小学">小学教材</a></li>
+            <li><a href="book-search.html?bookType=初中">初中教材</a></li>
+            <li><a href="book-search.html?bookType=高中">高中教材</a></li>
+        </ul>
+        <ul>
+            <li class="second-book-wunxue"><a href="">教辅:</a></li>
+            <li><a href="book-search.html?bookType=初中教辅">初中教辅</a></li>
+            <li><a href="book-search.html?bookType=高中教辅">高中教辅</a></li>
+            <li><a href="book-search.html?bookType=课外读物">课外读物</a></li>
+        </ul>
+    </nav>
+    <!--
+
+
+    -->
+    <nav id="goods" class="navbar navbar-default">
+        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+        <span>全部商品</span>
+    </nav>
+    <hr id="line">
+    <ul id="message" class="navbar navbar-default">
+        <input type="hidden" id="orderByVal">
+        <li id="zonhe"><a href="#" id="book_id" class="orderBy">综合排序</a></li>
+        <li id="xiaoshou"><a href="#" id="book_inventory" class="orderBy">销量</a></li>
+        <li id="jiage"><a href="#" id="book_price" class="orderBy">价格</a></li>
+        <li id="chuban"><a href="#" id="book_date" class="orderBy">出版时间</a></li>
+    </ul>
+    <nav id="book-part" class="navbar navbar-default">
+        <div class="book-part-one" id="one">
+
+        </div>
+        <div class="book-part-one" id="two">
+
+        </div>
+    </nav>
+    <!--分页-->
+    <!-- 分页插件-->
+    <nav aria-label="Page navigation" >
+        <div id="main-page">
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </nav>
+    <div id="foot">
+        <p>© 2022-现在 forestSoul 版权所有&nbsp&nbsp&nbsp&nbsp联系我们iyu.@163.com</p>
+    </div>
+    <script src="../jQuery/jquery.min.js"></script>
+    <script src="../script/book-search.js"></script>
+    <script src="../jQuery/jquery.pagination.js"></script>
+    <script src="../jQuery/bootstrap.min.js"></script>
+</body>
+    

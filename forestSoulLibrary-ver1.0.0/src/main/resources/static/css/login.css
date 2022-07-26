@@ -1,0 +1,57 @@
+
+#login-head-icon img{
+	position: relative;
+	left: 50%;
+	top: 30px;
+	margin-left: -30px;
+	width: 60px;
+}
+#login-head-wel{
+	text-align: center;
+	position: relative;
+	top: 100px;
+	font-size: 20px;
+}
+#login-form{
+	width: 350px;
+	position: relative;
+	left: 50%;
+	top: 150px;
+	margin-left: -175px;
+	padding: 10px;
+	border: #000000 1px solid;
+	border-radius: 10px;
+	background-color: #f6f8fa;
+	border-color:#d0d7de;
+}
+#login-form-sub{
+	background-color: #2da44e;
+	color: white;
+	width: 100%;
+	font-size: large;
+	outline: none;
+}
+#login-form-pw{
+	position: relative;
+	right: -220px;
+	font-size: small;
+}
+#login-new-ac{
+	width: 350px;
+	position: relative;
+	left: 50%;
+	margin-left: -175px;
+	margin-top: 180px;
+	padding: 15px;
+	border: #d0d7de 1px solid;
+	border-radius: 10px;
+	background-color: #f6f8fa;
+	text-align: center;
+}
+.error{
+	display: block;
+}
+
+.OK{
+	display: none;
+}

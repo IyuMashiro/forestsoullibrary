@@ -1,0 +1,142 @@
+body{
+    min-width:1200px;
+    max-width:100%;
+    overflow: scroll;
+}
+#daohang_first{
+    background: rgba(254, 220, 210, 1);
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+#e-book :hover{
+    background: none;
+}
+#daohang_first>li{
+    width: 150px;
+    float: left;
+    height: 50px;
+    list-style: none;
+}
+#daohang_first>li a{
+    color: rgba(223, 116, 74, 1);
+    text-decoration: none;
+}
+#daohang_first,#daohang_second{
+    width: 100%;
+}
+#last{
+    float: left;
+    padding-left: 50px;
+    color: rgba(223, 116, 74, 1);
+    text-decoration: none;
+}
+.show{
+    display: block;
+}
+.current{
+    background: rgba(223, 116, 74, 1);
+}
+.daohang_second{
+    border: 1px solid rgba(242, 185, 167, 1);
+    height: 110px;
+    background: rgba(242, 185, 167, 1);
+    display: none;
+}
+.menu{
+    border: 1px solid rgba(242, 185, 167, 1);
+    height: 48px;
+}
+.menu>li{
+    width: 150px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    line-height: 38px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.menu_first_text a{
+    font-size: 17px;
+    font-weight: 700;
+}
+.menu>li a{
+    color: rgba(56, 56, 56, 1);
+}
+.focus {
+    height: 550px;
+    margin: 0 auto;
+}
+.focus,#center_two,#center_three{
+   width: 1450px;
+   position: relative;
+}       
+.carousel,
+.carousel img {
+  width: 100%;
+  height: 100%;
+}
+#center_two{
+    width: 100%;
+    height: 75px;
+    margin: 0px auto;
+    font-size: 33px;
+    font-weight: 700; 
+    line-height: 75px;
+    padding-left: 30px;
+}
+#tab{
+    height: 900px;
+    width: 100%;
+    background: rgba(191, 211, 210, 1);
+}
+#tab .row{
+    padding-top: 90px;
+}
+#tab .row img{
+    height: 220px;
+    width: 229px;
+}
+#tab .row .col-sm-2>div{
+    padding-left: 20px;
+    width: 229px;
+    background: white;
+}
+.price{
+    padding-top: 20px;
+    height: 50px;
+    color: red;
+}
+.date{
+    padding-left: 60px;
+    display: inline-block;
+}
+#buttom{
+    height: 80px;
+    background: rgba(254, 220, 210, 1);
+    margin: 0px auto;
+    margin-top: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: 700;
+}
+#tab .col-sm-2 button{
+    width: 229px;
+    height: 40px;
+    background: rgba(223, 116, 74, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+}
+#tab .row{
+    padding-top: 70px;
+}
+.bookName{
+    font-size: 18px;
+    font-weight: bold;
+}

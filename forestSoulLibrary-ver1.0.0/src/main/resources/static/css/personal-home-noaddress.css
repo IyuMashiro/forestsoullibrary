@@ -1,0 +1,215 @@
+#icon{
+    position: relative;
+    top: 30px;
+    left: 35px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#user-icon span {
+    position: relative;
+    display: block;
+    top:35px;
+    left: 60px;
+    width: 100px;
+    font-weight: 600;
+}
+
+#table-format {
+    font-size: 15px;
+    font-weight: 550;
+    top: -110px;
+    position: relative;
+    left: 140px;
+}
+
+#table-format th {
+    text-align: center;
+    padding: 10px 0 0 130px;
+}
+
+#modification-info {
+    outline: none;
+    position: relative;
+    margin-left: 260px;
+    margin-top: -80px;
+    width: 562px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+#change-pwd {
+    color: white;
+    outline: none;
+    top: -40px;
+    width: 180px;
+    height: 40px;
+    position: relative;
+    background-color: #d63f3f;
+    border-radius: 30px;
+
+}
+
+#inline {
+    height: 2px;
+    background: coral;
+    border: none;
+    width: 970px;
+    margin: 0 auto;
+}
+
+.pw label {
+    position: relative;
+    top: -105px;
+    left: 60px;
+    font-size: 17px;
+}
+
+.pw-but {
+    border-radius: 20px;
+    margin-top: 20px;
+    outline: none;
+
+}
+
+#change-pwd:hover {
+    background-color: #c43737;
+}
+
+#add-address {
+    width: 1000px;
+    height: 40px;
+    margin-left: 19px;
+    margin-bottom: 85px;
+    outline: none;
+
+}
+#foot {
+    height: 5px;
+}
+#user-name{
+    top: -20px;
+    font-size: 20px;
+}
+#user-acct{
+    padding: 0;
+    position: relative;
+    top:16px;
+    left: 112px;
+}
+#user-id-val{
+    position: relative;
+    top: -10px;
+    padding: 0;
+    left: 80px;
+}
+#user-id{
+    position: relative;
+    top: 10px !important;
+}
+
+.address-main{
+    width: 1000px;
+    height: 100px;
+    margin-left: 19px;
+    border-radius: 50px;
+}
+.glyphicon{
+    position: relative;
+    top: 25px;
+    left: 20px;
+}
+.name{
+    position: relative;
+    top: -20px;
+    left: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+.phone{
+    position: relative;
+    top: -50px;
+    left: 140px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #0f0f0f;
+}
+#address{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.address{
+    position: relative;
+    top: -40px;
+    left: 60px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #0f0f0f;
+
+}
+.delete{
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #d63f3f;
+    color: white;
+    position: relative;
+    top: -65px;
+    left: 300px;
+    outline: none;
+}
+.update{
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    top: -65px;
+    left: 300px;
+    outline: none;
+}
+#default{
+    color: #0f0f0f;
+    font-weight: bold;
+    position: relative;
+    margin-right: 10px;
+    top: -65px;
+    left: 300px;
+    padding: 28px;
+}
+.setDefault{
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    top: -65px;
+    left: 300px;
+    outline: none;
+}
+
+.update:focus{
+    outline: none !important;
+}
+.delete:hover{
+    background-color: #c43737;
+    color: white;
+}
+.setDefault:focus{
+    outline: none !important;
+}
+.delete:active{
+    background-color: #c43737 !important;
+    color: white !important;
+    outline: none !important;
+}
+.delete:focus{
+    background-color: #c43737 !important;
+    color: white !important;
+    outline: none !important;
+}
+.btn-address{
+    position: relative;
+    left: 220px;
+    top: -25px;
+}

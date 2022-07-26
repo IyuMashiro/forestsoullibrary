@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/pay-success.css"/>
+    <link rel="stylesheet" href="../css/head.css"/>
+</head>
+<body>
+    <div id="box">
+        <!-- 导航栏 -->
+       <nav class="navbar navbar-default" id="head">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">森灵</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" id="head-input" class="form-control" placeholder="书海寻径">
+              </div>
+              <button type="button" id="head-sub" class="btn btn-default">搜索</button>
+            </form>
+
+              <ul class="nav navbar-nav navbar-right" id="login-bar">
+                  <li><a href="customer-car.html">购物车</a></li>
+                  <li><a href="customer-indent-info.html">我的订单</a></li>
+                  <li><a href="customer-book.html">我的图书</a></li>
+                  <li id="noLogin"><a href="../web/login.html">登录 或 注册 </a></li>
+              </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <!-- 从此开始添加新内容 -->
+        <div class="row" id="center">
+            <div class="col-sm-3"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>购物车</div>
+            <div class="col-sm-1"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+            <div class="col-sm-3"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>确认订单信息</div>
+            <div class="col-sm-1"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></div>
+            <div class="col-sm-3"><span class="glyphicon glyphicon-saved" aria-hidden="true"></span>成功提交订单</div>
+        </div>
+        <div id="thanking">
+            <label>感谢您的购买,欢迎下次光临</label>
+            <div id="Order_number">
+                <span><span id="indentId"></span ></span>
+            </div>
+        </div>
+        <div id="foot">
+            <button type="button" id="backIndex">返回主页</button>
+        </div>
+      </div>
+    </div>
+    <div id="buttom">@ 2022-现在forestSoul版权所有 联系我们:iyu.@163.com</div>
+    <script src="/jQuery/jquery.min.js"></script>
+    <script src="/jQuery/bootstrap.min.js"></script>
+    <script src="/jQuery/bootStrap4.6.1.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="/script/jquery-getUrlParam.js"></script>
+    <script src="/script/pay-success.js"></script>
+    <script>
+        $(function(){
+            $("#box>.row>div").eq(4).css("background-color","rgba(223, 116, 74, 1)")
+
+        })
+    </script>
+</body>
+</html>

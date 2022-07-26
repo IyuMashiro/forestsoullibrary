@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width:1200px;
+    max-width:100%;
+    overflow: scroll;
+}
+#daohang_first{
+    background: rgba(254, 220, 210, 1);
+    font-size: 24px;
+    font-weight: 700;
+    height: 70px;
+    line-height: 52px;
+    text-align: center;
+}
+
+#daohang_first>li :hover{
+    background: rgba(223, 116, 74, 1);
+    color: white;
+}
+#daohang_first>li{
+    width: 150px;
+}
+#daohang_first>li a{
+    color: rgba(223, 116, 74, 1);
+    width: 100%;
+}
+#center{
+    margin: 30px auto;
+    width: 85%;
+    height: 520px;
+    font-size: 24px;
+    font-weight: 700;
+}
+#center>.table-responsives,.bookImg{
+    float:left;
+    margin:70px 0px 0px 70px;
+    position:relative;
+}
+.table-responsives{
+    width: 50%;
+}
+hr{
+    width: 100%;
+}
+.btn{
+    width: 32px;
+    height: 32px;
+    background: rgba(165, 214, 63, 1);
+    color: white;
+}
+#number-input{
+    width: 85px;
+    height: 32px;
+    background: rgba(229, 229, 229, 1);
+    text-align: center;
+    border: none;
+}
+.btns{
+    border: none;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+    width: 222px;
+    height: 54px;
+    background: rgba(165, 214, 63, 1);
+}
+#buttom{
+    height: 80px;
+    background: rgba(254, 220, 210, 1);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bookImg{
+    width: 220px;
+    height: 229px;
+}
+.NoGoods{
+    background: rgba(166, 166, 166, 1);
+}
+#buyPdf{
+    position: relative;
+    top: -75px;
+    left: 250px;
+    width: 222px;
+    height: 54px;
+    display: block;
+    text-align: center;
+    line-height: 54px;
+}

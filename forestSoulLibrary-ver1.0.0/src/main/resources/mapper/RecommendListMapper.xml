@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.forestsoul.forestsoullibrary.mapper.RecommendListMapper">
+    <resultMap id="RecommendListEntityMap" type="com.forestsoul.forestsoullibrary.entity.RecommendList">
+        <id column="recommend_id" property="recommendId"/>
+        <result column="book_id" property="bookId"/>
+    </resultMap>
+
+    <insert id="addRecommend">
+        INSERT INTO recommend_list(book_id) VALUES (#{bookId})
+    </insert>
+
+    <delete id="deleteRecommend">
+        DELETE FROM  recommend_list WHERE book_id = #{bookId}
+    </delete>
+
+    <select id="findBookById" resultType="java.lang.Integer">
+        SELECT recommend_id FROM recommend_list WHERE book_id = #{bookId}
+    </select>
+
+    <select id="getAllRecommend" resultMap="RecommendListEntityMap">
+        SELECT * FROM recommend_list
+    </select>
+</mapper>

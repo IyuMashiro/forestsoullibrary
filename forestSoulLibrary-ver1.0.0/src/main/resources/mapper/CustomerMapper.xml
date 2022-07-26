@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.forestsoul.forestsoullibrary.mapper.CustomerMapper">
+        <!--自定义映射规则-->
+        <resultMap id="CustomerEntityMap" type="com.forestsoul.forestsoullibrary.entity.Customer">
+            <id column="customer_id" property="customerId"/>
+            <result column="customer_login" property="customerLogin"/>
+            <result column="customer_name" property="customerName"/>
+            <result column="customer_email" property="customerEmail"/>
+            <result column="customer_password" property="customerPassword"/>
+            <result column="customer_salt" property="customerSalt"/>
+            <result column="customer_icon" property="customerIcon"/>
+            <result column="customer_date" property="customerDate"/>
+            <result column="customer_book_count" property="customerBookCount"/>
+            <result column="customer_price_count" property="customerPriceCount"/>
+            <result column="customer_delete" property="customerDelete"/>
+        </resultMap>
+
+        <update id="updatePasswordById">
+            UPDATE customer
+            SET customer_password = #{customerPassword}
+            WHERE customer_id = #{customerId}
+        </update>
+
+        <update id="updateInfoById">
+           UPDATE customer
+           SET
+            <if test="customerName != null">customer_name = #{customerName},</if>
+            <if test="customerEmail != null">customer_email = #{customerEmail},</if>
+           customer_delete = 0
+           WHERE customer_id = #{customerId}
+        </update>
+
+        <update id="updateIconById">
+            UPDATE customer
+            SET
+                customer_icon = #{customerIcon}
+            WHERE customer_id = #{customerId}
+        </update>
+
+        <update id="updateBookCount">
+            UPDATE customer
+            SET
+                customer_book_count = #{customerBookCount},
+                customer_price_count = #{customerPriceCount}
+            WHERE customer_id = #{customerId}
+        </update>
+
+        <update id="updateCustomer">
+            UPDATE customer
+            SET
+                customer_name = #{customerName},
+                customer_password = #{customerPassword}
+            WHERE customer_id = #{customerId}
+        </update>
+
+        <update id="deleteCustomer">
+            UPDATE customer
+            SET
+                customer_delete = 1
+            WHERE customer_id = #{customerId}
+        </update>
+
+        <insert id="insert">
+            INSERT INTO customer(customer_login, customer_name,customer_email,customer_password,customer_salt,customer_icon,
+                                 customer_date, customer_book_count,customer_price_count,
+                                 customer_delete)
+            VALUES (#{customerLogin}, #{customerName},#{customerEmail}, #{customerPassword}, #{customerSalt},#{customerIcon},
+                    #{customerDate}, #{customerBookCount}, #{customerPriceCount}, #{customerDelete})
+        </insert>
+
+        <select id="findByName" resultMap="CustomerEntityMap">
+            SELECT customer_id,customer_login, customer_name, customer_email ,customer_password,customer_salt,customer_icon,
+                   customer_date, customer_book_count,customer_price_count,
+                   customer_delete
+            FROM customer
+            WHERE customer_login = #{customerLogin} AND customer_delete = 0
+        </select>
+
+        <select id="findById" resultMap="CustomerEntityMap">
+            SELECT customer_id,customer_login, customer_name, customer_email ,customer_password,customer_salt,customer_icon,
+                   customer_date, customer_book_count,customer_price_count,
+                   customer_delete
+            FROM customer
+            WHERE customer_id = #{customerId} AND customer_delete = 0
+        </select>
+
+        <select id="getAllCustomer" resultMap="CustomerEntityMap">
+            SELECT * FROM customer WHERE customer_delete = 0 ORDER BY customer_id ASC LIMIT 0,5
+        </select>
+
+    <select id="getByKeyword" resultMap="CustomerEntityMap">
+        SELECT * FROM customer WHERE customer_delete = 0 AND (customer_login like concat("%",#{keyword},"%") OR customer_name like concat("%",#{keyword},"%"))
+    </select>
+</mapper>

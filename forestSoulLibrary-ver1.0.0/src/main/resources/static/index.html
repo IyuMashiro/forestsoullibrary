@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/head.css"/>
+    <link rel="stylesheet" href="css/book-index.css"/>
+</head>
+<body>
+     <!-- 导航栏 -->
+     <nav class="navbar navbar-default" id="head">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">森灵</a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" id="head-input" class="form-control" placeholder="书海寻径">
+              </div>
+              <button type="button" id="head-sub" class="btn btn-default">搜索</button>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right" id="login-bar">
+                <li><a href="customerWeb/customer-car.html">购物车</a></li>
+                <li><a href="customerWeb/customer-indent-info.html">我的订单</a></li>
+                <li><a href="customerWeb/customer-book.html">我的图书</a></li>
+                <li id="noLogin"><a href="web/login.html">登录 或 注册 </a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <!-- 从此开始添加新内容 -->
+      <ul  id="daohang_first">
+        <li id="e-book"><a href="customerWeb/book-search.html">图书分类</a></li>
+        <li ><a href="#">文学·小说</a></li>
+        <li><a href="#">社科·经营</a></li>
+        <li><a href="#">教材·教辅</a></li>
+      </ul>
+      <div id="shift">
+        <div></div>
+        <div class="daohang_second">
+          <ul class="menu menu_first" >
+            <li class="menu_first_text"><a href="#">文学:</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=现代小说">现代文学</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=民间文学">民间文学</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=经典文学">经典文学</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=外国文学">外国文学</a></li>
+          </ul>
+          <ul class="menu menu_second">
+            <li class="menu_first_text"><a href="#">小说:</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=科幻小说">科幻小说</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=青春小说">青春小说</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=武侠小说">武侠小说</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=言情小说">言情小说</a></li>
+          </ul>
+        </div>
+        <div class="daohang_second">
+          <ul class="menu menu_first" >
+            <li class="menu_first_text"><a href="#">社科:</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=经济学类">经济学类</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=新闻传播">新闻传播</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=公共关系">公共关系</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=社科理论">社科理论</a></li>
+          </ul>
+          <ul class="menu menu_second">
+            <li class="menu_first_text"><a href="#">经营:</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=金融管理">金融管理</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=物流管理">物流管理</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=质量管理">质量管理</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=资源管理">资源管理</a></li>
+          </ul>
+        </div>
+        <div class="daohang_second">
+          <ul class="menu menu_first" >
+            <li class="menu_first_text"><a href="#">教材:</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=小学">小学教材</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=初中">初中教材</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=高中">高中教材</a></li>
+          </ul>
+          <ul class="menu menu_second">
+            <li class="menu_first_text"><a href="#">教辅:</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=初中教辅">初中教辅</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=高中教辅">高中教辅</a></li>
+              <li><a href="customerWeb/book-search.html?bookType=课外读物">课外读物</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="focus">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators 小圆点-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+  
+            <!-- Wrapper for slides 轮播图-->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="img/轮播图.png.png" alt="...">
+                </div>
+                <div class="item">
+                    <img src="img/轮播图.png.png" alt="...">
+                </div>
+                <div class="item">
+                    <img src="img/轮播图.png.png" alt="...">
+  
+                </div>
+            </div>
+  
+            <!-- Controls 左右翻页-->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div id="center_two"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>今日推荐</div>
+    <div id="tab">
+      <div class="row">
+          <div class="col-sm-1"></div>
+          <div id="recommend1">
+          </div>
+      </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div id="recommend2">
+            </div>
+        </div>
+    </div>
+  <div id="buttom">@ 2022-现在forestSoul版权所有 联系我们:iyu.@163.com</div>
+  <script src="jQuery/jquery.min.js"></script>
+  <script src="jQuery/bootstrap.min.js"></script>
+  <script src="script/index.js"></script>
+  <script>
+    $(function(){
+      $("#daohang_first>li").hover(function(){
+        $(this).addClass("current");
+				$(this).siblings().removeClass("current");
+        $(this).children().css("color","white")
+        $(this).siblings().children().css("color","rgba(223, 116, 74, 1)")
+        var index=$(this).index();
+				let $li=$("#shift>div").eq(index);
+				console.log($li)
+				$li.siblings().removeClass("show");
+				$li.addClass("show")
+        $(".show").hover(function(){
+          $(this).show()
+        },function(){
+          $(this).hide()
+        })
+			},function(){
+        $(this).removeClass("current");
+        $(this).children().css("color"," rgba(223, 116, 74, 1)")
+        let index=$(this).index();
+				var $li=$("#shift>div").eq(index);
+        $li.removeClass("show");
+      })
+      })
+  </script>
+</body>
+</html>

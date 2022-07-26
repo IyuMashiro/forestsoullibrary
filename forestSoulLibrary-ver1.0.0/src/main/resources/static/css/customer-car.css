@@ -1,0 +1,73 @@
+#box{
+    position: relative;
+}
+#box> .row, #tables,#btn{
+    width: 1300px;
+    margin: 20px auto;
+}
+#box> .row .col-sm-3,.col-sm-1{
+    line-height: 52px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+#box> .row .col-sm-3{
+    width: 360px;
+    height: 52px;
+    background: rgba(166, 166, 166, 1);
+    color: white;
+}
+#tables tr td{
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+#tables tr td a{
+    color: black;
+}
+#tables tbody td{
+    background: rgba(180, 212, 210, 1);
+}
+#tables thead,tfoot{
+    background: rgba(202, 235, 233, 1);
+}
+.btn{
+    width: 32px;
+    height: 32px;
+    background: rgba(165, 214, 63, 1);
+    color: white;
+}
+.number-input{
+    width: 85px;
+    height: 25px;
+    background: rgba(229, 229, 229, 1);
+    text-align: center;
+    border: none;
+}
+#btn .col-sm-2>button{
+    background: rgba(165, 214, 63, 1);
+    color: white;
+}
+#btn button{
+    width: 150px;
+    height: 54px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+#buttom{
+    height: 80px;
+    background: rgba(254, 220, 210, 1);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.img{
+    width: 36px;
+    height: 54px;
+}

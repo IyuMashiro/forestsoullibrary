@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box{
+    position: relative;
+}
+#box> .row, #tables,#btn{
+    width: 1300px;
+    margin: 20px auto;
+}
+#box> .row .col-sm-3,.col-sm-1{
+    line-height: 52px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+#box> .row .col-sm-3{
+    width: 360px;
+    height: 52px;
+    background: rgba(166, 166, 166, 1);
+    color: white;
+}
+#box .form-horizontal>label{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px;
+}
+#box #forms{
+    width: 1300px;
+    margin: 20px auto;
+    background: rgba(202, 235, 233, 1);
+}
+
+#box form table td{
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 170px;
+}
+
+#box form table tbody{
+    background: rgba(180, 212, 210, 1);
+}
+#btn .col-sm-2>button{
+    background: rgba(165, 214, 63, 1);
+    color: white;
+}
+#btn button{
+    width: 150px;
+    height: 54px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+#buttom{
+    height: 80px;
+    background: rgba(254, 220, 210, 1);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+}
+#addAddress{
+    background: rgba(165, 214, 63, 1);
+    color: white;
+    position: relative;
+    left: -60px;
+}
+.confirm{
+    background-color: rgb(223, 116, 74) !important;
+}
+.update{
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    top: -65px;
+    left: 300px;
+    outline: none;
+}
+#default{
+    color: #0f0f0f;
+    font-weight: bold;
+    position: relative;
+    margin-right: 10px;
+    top: -65px;
+    left: 300px;
+    padding: 28px;
+}
+.setDefault{
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    top: -65px;
+    left: 300px;
+    outline: none;
+}
+
+.update:focus{
+    outline: none !important;
+}
+.setDefault:focus{
+    outline: none !important;
+}
+.btn-address{
+    position: relative;
+    left: 220px;
+    top: -25px;
+}
+#add-address {
+    width: 1000px;
+    height: 40px;
+    margin-left: 19px;
+    margin-bottom: 85px;
+    outline: none;
+
+}
+.address-main{
+    width: 1000px;
+    height: 100px;
+    margin-left: 19px;
+    border-radius: 50px;
+}
+.name{
+    position: relative;
+    top: -20px;
+    left: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+.phone{
+    position: relative;
+    top: -50px;
+    left: 140px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #0f0f0f;
+}
+#address{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.icon{
+    position: relative;
+    top: 25px;
+    left: 20px;
+}
+.address{
+    position: relative;
+    top: -40px;
+    left: 60px;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #0f0f0f;
+
+}
+.use{
+    position: relative;
+    left: 340px;
+    top: -60px;
+    color: #0f0f0f;
+    font-weight: bold;
+}
+.GoodsImg{
+    width: 16px;
+}

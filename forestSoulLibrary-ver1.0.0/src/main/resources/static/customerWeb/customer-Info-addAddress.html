@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+<link rel="stylesheet" href="../css/head.css"/>
+<link rel="stylesheet" href="../css/user-main.css"/>
+<link rel="stylesheet" href="../css/user-select.css"/>
+<body>
+    <nav class="navbar navbar-default" id="head">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">森灵</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" id="head-input" class="form-control" placeholder="书海寻径">
+              </div>
+              <button type="button" id="head-sub" class="btn btn-default">搜索</button>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="customer-car.html">购物车</a></li>
+                <li><a href="customer-indent-info.html">我的订单</a></li>
+                <li><a href="customer-book.html">我的图书</a></li>
+                <li class="dropdown">
+                    <a href="#" id="customerName" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="customer-Info.html">个人主页</a></li>
+                        <li><a href="/customer/logout">注销</a></li>
+                    </ul>
+                </li>
+                <img id="head-img" src="/img/default_icon.png">
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+        <hr id="line"/>
+        <div id="user-main">
+            <div>
+                <img src="../img/headImg.png">
+            </div>
+            <div>
+                <form id="form-address">
+                    <div class="form-group input">
+                        <label for="inputName">姓名</label>
+                        <input type="text" class="form-control" name="addressName" id="inputName" required="required">
+                        <p id="NameErrorMsg" class="OK msg">不允许特殊字符,2-8字</p>
+                    </div>
+                    <div class="select">
+                        <span class="select-name">地区</span>
+                        <span>省</span>
+                        <select class="form-control user-select" name="provinceCode" id="select-province" required="required">
+                            <option>--请选择--</option>
+                        </select>
+                        <span>市</span>
+                        <select class="form-control user-select" name="cityCode" id="select-city" required="required">
+                            <option>--请选择--</option>
+                        </select>
+                        <span>区</span>
+                        <select class="form-control user-select" name="areaCode" id="select-area" required="required">
+                            <option>--请选择--</option>
+                        </select>
+                        <p id="cityErrorMsg" class="OK exMsg">不能为空</p>
+                    </div>
+                        
+                    <div class="form-group input">
+                        <label for="inputPosition">地址</label>
+                        <input type="text" class="form-control" name="addressPosition" id="inputPosition" required="required">
+                        <p id="positionErrorMsg" class="OK msg">不允许特殊字符,最多50字</p>
+                    </div>
+                    <div class="form-group input" id="phone">
+                        <label for="inputPhone">电话号码</label>
+                        <input type="tel" class="form-control" name="addressPhone" id="inputPhone" required="required">
+                        <p id="phoneErrorMsg" class="OK msg">非法的号码格式</p>
+                    </div>
+                    <button type="button" class="btn btn-default but" id="updata">新增地址</button>
+                    <button type="button" class="btn btn-default but" id="cal">取消</button>
+                </form>
+            </div>
+        </div>
+
+    <script src="../jQuery/jquery.min.js"></script>
+    <script src="../jQuery/bootstrap.min.js"></script>
+    <script src="../script/customer-Info-addAddress.js"></script>
+</body>
+</html>

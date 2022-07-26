@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.forestsoul.forestsoullibrary.mapper.BookMapper">
+    <!--自定义映射规则-->
+    <resultMap id="BookEntityMap" type="com.forestsoul.forestsoullibrary.entity.Book">
+        <id column="book_id" property="bookId"/>
+        <result column="book_name" property="bookName"/>
+        <result column="book_price" property="bookPrice"/>
+        <result column="book_author" property="bookAuthor"/>
+        <result column="book_sales" property="bookSales"/>
+        <result column="book_inventory" property="bookInventory"/>
+        <result column="book_type" property="bookType"/>
+        <result column="book_date" property="bookDate"/>
+        <result column="book_img" property="bookImg"/>
+        <result column="book_pdf" property="bookPdf"/>
+        <result column="book_delete" property="bookDelete"/>
+    </resultMap>
+
+    <insert id="addBook">
+        INSERT INTO book(book_name,book_price,book_author,book_sales,book_inventory,book_type,book_date,book_img,book_pdf,book_delete)
+               VALUES (#{bookName},#{bookPrice},#{bookAuthor},#{bookSales},#{bookInventory},#{bookType},#{bookDate},#{bookImg},#{bookPdf},#{bookDelete})
+    </insert>
+
+    <update id="updateSalesAndInventory">
+        UPDATE book SET book_sales = #{bookSales}, book_inventory = #{bookInventory} WHERE book_id = #{bookId}
+    </update>
+
+    <update id="updateBook">
+        UPDATE book SET
+        <if test="bookName != null">book_name = #{bookName},</if>
+        <if test="bookPrice != null">book_price = #{bookPrice},</if>
+        <if test="bookAuthor != null">book_author = #{bookAuthor},</if>
+        <if test="bookInventory != null">book_inventory = #{bookInventory},</if>
+        <if test="bookType != null">book_type = #{bookType},</if>
+        <if test="bookDate != null">book_date = #{bookDate},</if>
+        <if test="bookImg != null">book_img = #{bookImg},</if>
+        <if test="bookPdf != null">book_pdf = #{bookPdf},</if>
+        book_delete = 0
+        WHERE book_id = #{bookId}
+    </update>
+
+    <update id="deleteBook">
+        UPDATE book SET book_delete = 1 WHERE book_id = #{bookId}
+    </update>
+
+    <select id="findById" resultMap="BookEntityMap">
+        SELECT * FROM book WHERE book_id = #{bookId}
+    </select>
+
+    <select id="getByKeyword" resultMap="BookEntityMap">
+        SELECT * FROM book WHERE book_delete = 0 AND( book_name like concat("%",#{keyword},"%") OR book_author like concat("%",#{keyword},"%"))
+    </select>
+
+    <select id="getByKeywordAndBookType" resultMap="BookEntityMap">
+        SELECT * FROM book WHERE book_type = #{bookForm} AND book_delete = 0  AND (book_name like concat("%",#{keyword},"%") OR book_author like concat("%",#{keyword},"%"))
+    </select>
+
+    <select id="getByKeywordOrderBy" resultMap="BookEntityMap">
+        SELECT * FROM book WHERE book_delete = 0 AND (book_name like concat("%",#{keyword},"%") OR book_author like concat("%",#{keyword},"%")) ORDER BY ${orderBy}
+    </select>
+
+    <select id="getByKeywordAndBookTypeOrderBy" resultMap="BookEntityMap">
+        SELECT * FROM book WHERE book_delete = 0 AND book_type = #{bookForm} AND( book_name like concat("%",#{keyword},"%") OR book_author like concat("%",#{keyword},"%")) ORDER BY ${orderBy}
+    </select>
+</mapper>

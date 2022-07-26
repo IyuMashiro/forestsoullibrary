@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#box{
+    position: relative;
+}
+#box #center,#btn{
+    width: 1300px;
+    margin: 30px auto;
+    text-align: center;
+}
+#box> #center{
+    line-height: 52px;
+    font-size: 24px;
+    font-weight: 700;
+}
+#box> #center>.col-md-5{
+    height: 52px;
+    background: rgba(166, 166, 166, 1);
+    color: white;
+}
+#center_table{
+    width: 1300px;
+    margin: 30px auto;
+    height: 280px;
+    background: rgba(202, 235, 233, 1);
+    font-size: 16px;
+    font-weight: 700;
+}
+table>td{
+    border: 1px solid red;
+}
+#center_table>label{
+    margin: 20px 0px 0px -1150px;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+}
+#center_table tbody{
+    background: rgba(180, 212, 210, 1);
+}
+#btn .col-sm-4>button{
+    background: rgba(165, 214, 63, 1);
+    color: white;
+    margin-right: -260px;
+}
+#btn button{
+    width: 150px;
+    height: 54px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+#buttom{
+    height: 80px;
+    background: rgba(254, 220, 210, 1);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#confirm{
+ background-color: rgb(223, 116, 74) !important;
+}
+.img{
+    width: 36px;
+    height: 54px;
+}

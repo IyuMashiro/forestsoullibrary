@@ -1,0 +1,64 @@
+.input input{
+    width: 300px;
+    position: relative;
+    left: 110px;
+}
+.input label{
+    position: relative;
+    top: 34px;
+    left: 25px;
+    font-size: 18px;
+}
+#new-pw{
+    position: relative;
+    top: -20px;
+}
+#new-pw label{
+    left: 42px;
+}
+.but{
+    width: 500px;
+    height: 40px;
+    margin-left: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+    outline: none;
+    
+}
+
+#updata{
+    background-color: #D43030;
+    color: white;
+    outline: none;
+}
+#updata:hover{
+    background-color: #c72d2d;
+    color: white;
+}
+
+#updata:active{
+    background-color: #c72d2d;
+    color: white;
+    outline: none;
+}
+
+#cal{
+    margin-bottom: 20px;
+    outline: none;
+}
+
+#reNew-pw{
+    position: relative;
+    top: -40px;
+}
+.msg{
+    position: relative;
+    left: 420px;
+    top: -25px;
+}
+.OK{
+    display: none;
+}
+.error{
+    display: block;
+}

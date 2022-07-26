@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.forestsoul.forestsoullibrary.mapper.IndentMapper">
+    <!--自定义映射规则-->
+    <resultMap id="IndentEntityMap" type="com.forestsoul.forestsoullibrary.entity.Indent">
+        <id column="indent_id" property="indentId"/>
+        <result column="customer_id" property="customerId"/>
+        <result column="indent_price" property="indentPrice"/>
+        <result column="indent_name" property="indentName"/>
+        <result column="indent_phone" property="indentPhone"/>
+        <result column="indent_address" property="indentAddress"/>
+        <result column="indent_date" property="indentDate"/>
+        <result column="indent_state" property="indentState"/>
+    </resultMap>
+
+    <insert id="addIndent">
+        INSERT INTO indent(indent_id,customer_id,indent_price,indent_name,indent_phone,indent_address,indent_date,indent_state)
+               VALUES (#{indentId},#{customerId},#{indentPrice},#{indentName},#{indentPhone},#{indentAddress},#{indentDate},#{indentState})
+    </insert>
+
+    <update id="updateState">
+        UPDATE indent SET indent_state = #{indentState} WHERE indent_id = #{indentId}
+    </update>
+
+    <update id="updateIndent">
+        UPDATE indent SET indent_price = #{indentPrice},indent_name = #{indentName},indent_phone = #{indentPhone},indent_address = #{indentAddress},indent_state = #{indentState} WHERE indent_id = #{indentId}
+    </update>
+
+    <update id="deleteIndent">
+        UPDATE indent SET indent_state = -1 WHERE indent_id = #{indentId}
+    </update>
+
+    <select id="findById" resultMap="IndentEntityMap">
+        SELECT * FROM indent WHERE customer_id = #{customerId} AND indent_state != -1
+    </select>
+
+    <select id="findAll" resultMap="IndentEntityMap">
+        SELECT * FROM indent WHERE indent_state != -1
+    </select>
+
+    <select id="getOnce" resultMap="IndentEntityMap">
+        SELECT * FROM indent WHERE indent_state != -1 AND indent_id = #{indentId}
+    </select>
+
+
+</mapper>

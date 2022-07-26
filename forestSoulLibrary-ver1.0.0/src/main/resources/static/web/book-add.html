@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>register</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="../css/fileinput.min.css">
+    <link rel="stylesheet" href="../css/register.css" />
+</head>
+<body>
+<header>
+    <div id="register-head-icon">
+        <a href="libraryManageSystem.html">
+            <img src="../fonts/燕窝.svg" />
+        </a>
+    </div>
+    <div id="register-head-wel">
+        <span>添加书籍</span>
+    </div>
+</header>
+
+<div id="register-form">
+    <form id="form">
+        <div class="form-group">
+            <label >书籍名</label>
+            <input type="text" class="form-control" name="bookName" id="bookName">
+        </div>
+        <div class="form-group">
+            <label>作者</label>
+            <input type="text" class="form-control" name="bookAuthor" id="bookAuthor">
+        </div>
+        <div class="form-group" id="add-icon">
+            <label>书籍封面</label>
+            <input type="file" name="icon" id="icon" multiple class="file"/>
+        </div>
+        <div class="form-group" id="add-pdf">
+            <label>pdf文件</label>
+            <input type="file" name="file" id="pdf" multiple class="file"/>
+        </div>
+        <div class="form-group" id="bookDate">
+            <label>出版时间</label>
+            <input class="form-control" id="inputDate" name="bookDate" type="text">
+            <i class="fa fa-calendar"></i>
+        </div>
+        <div class="form-group">
+            <label>价格</label>
+            <input type="text" class="form-control" name="bookPrice" id="bookPrice">
+        </div>
+        <div class="form-group">
+            <label >库存</label>
+            <input type="text" class="form-control" name="bookInventory" id="bookInventory">
+        </div>
+        <div class="form-group">
+            <label>书籍类型</label>
+            <select id="type" name="bookType">
+                <option value="现代小说">现代小说</option>
+                <option value="民间文学">民间文学</option>
+                <option value="经典文学">经典文学</option>
+                <option value="外国文学">外国文学</option>
+                <option value="科幻小说">科幻小说</option>
+                <option value="青春小说">青春小说</option>
+                <option value="武侠小说">武侠小说</option>
+                <option value="8=言情小说">言情小说</option>
+                <option value="经济学类">经济学类</option>
+                <option value="新闻传播">新闻传播</option>
+                <option value="公共关系">公共关系</option>
+                <option value="社科理论">社科理论</option>
+                <option value="金融管理">金融管理</option>
+                <option value="物流管理">物流管理</option>
+                <option value="质量管理">质量管理</option>
+                <option value="资源管理">资源管理</option>
+                <option value="小学">小学</option>
+                <option value="初中">初中</option>
+                <option value="高中">高中</option>
+                <option value="初中教辅">初中教辅</option>
+                <option value="高中教辅">高中教辅</option>
+                <option value="课外读物">课外读物</option>
+            </select>
+        </div>
+        <button type="button" id="register-form-sub" class="btn btn-default">提交</button>
+    </form>
+</div>
+
+
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="../jQuery/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="../jQuery/bootstrap.min.js" ></script>
+<script src="../jQuery/bootstrap-datepicker.min.js"></script>
+<script src="../script/book-add.js"></script>
+<script src="../jQuery/fileinput.js"></script>
+<script src="../jQuery/fileinput_locale_zh.js"></script>
+<script src="../jQuery/bootstrap-datepicker.min.js"></script>
+<script>
+    $(function(){
+
+         $("#inputDate").datepicker({
+            language: 'zh-CN', //语言
+            autoclose: true, //选择后自动关闭
+            clearBtn: true,//清除按钮
+            format: "yyyy-mm-dd"//日期格式
+        });
+
+    })
+</script>
+</body>
+</html>
